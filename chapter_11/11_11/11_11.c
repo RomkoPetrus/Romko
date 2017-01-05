@@ -2,12 +2,12 @@
 #include <string.h>
 #include "11_11.h" 
 
-void main(void){
+int main(void){
 	char strings[STR][MAX] = {'\0'};
 	int lenth[MAX] = {0};
 
 	printf ("Please, enter %d strings\n", STR);
-	input(*strings);
+	input(strings);
 	
 	short ch = 0;
 	while (ch != 5) {
@@ -22,7 +22,7 @@ void main(void){
 			break;
 		case 2:
 			for (int i = 0; i < STR; i++) {
-				(int) lenth[i] = strings[i][0];				
+				lenth[i] = strings[i][0];
 			}
 			sort(strings, lenth);
 			break;
@@ -35,12 +35,15 @@ void main(void){
 			for (int i = 0; i < STR; i++){
 				short count = 0;
 				while (strings[i][count] != ' ' && strings[i][count] != '\0') count++;
-				lenth[i] = count;				
+				lenth[i] = count;
 			}
 			sort(strings, lenth);
 			break;
+		case 5:
+			break;
 		default:
 			puts("Pleace, input 1, 2, 3, 4 or 5");
-		}		
-	}	
+		}	
+	}
+	return 0;
 }

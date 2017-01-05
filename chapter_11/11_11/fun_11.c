@@ -2,7 +2,7 @@
 #include <string.h>
 #include "11_11.h"
 
-void * input (char (*st)[MAX]){
+void input (char (*st)[MAX]){
 	for (int i = 0; i < STR; ++i){
 		short temp, j;
 		for (j = 0; j < MAX - 1 && (temp = getchar()) != EOF && temp != '\n'; ++j)			
