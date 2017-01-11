@@ -6,8 +6,6 @@ have this version return the value of 0 if the input string is not a pure number
 */
 
 #include <stdio.h>
-#include <math.h>
-#include <string.h>
 #include <ctype.h>
 
 int myAtoi(const char * ar);
