@@ -19,6 +19,7 @@ int main (void){
 		n = function();
 	}
 	printf("Number of calls is %d\n", n);
+	return 0;
 }
 
 unsigned int function(void){
