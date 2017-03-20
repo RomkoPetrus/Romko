@@ -22,11 +22,11 @@ int main(void){
 			}
 		}
 		roll = roll_n_dice(dice, sides);
-		printf("You have rolled a %d using %d %d-sided dice.\n", 
+		printf("You have rolled a %d using %d %d-sided dice.\n",
 			roll, dice, sides);
 		puts("How many sides? Enter 0 to stop.");
 	}
-	printf("The rollem() function was called %d times.\n", 
+	printf("The rollem() function was called %d times.\n",
 		roll_count);
 	puts("GOOD FORTUNE TO YOU!");
 	return 0;
